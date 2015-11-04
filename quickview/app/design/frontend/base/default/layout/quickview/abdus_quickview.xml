@@ -1,0 +1,17 @@
+<layout version="0.1.0">
+    <abdus_quickview_init translate="label">
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/quickview/tinybox.js</name></action>
+            <action method="addCss"><stylesheet>css/quickview/tinybox.css</stylesheet></action>
+        </reference>
+    </abdus_quickview_init>
+    <abdus_quickview translate="label">
+        <reference name="head">
+            <block type="core/template" name="loadbase" template="quickview/base.phtml" />
+        </reference>
+        <remove name="header" />
+        <remove name="left" />
+        <remove name="right" />
+        <remove name="footer" />
+    </abdus_quickview>
+</layout>

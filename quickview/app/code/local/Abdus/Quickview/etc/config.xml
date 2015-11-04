@@ -1,0 +1,29 @@
+<config>
+	<modules>
+		<Abdus_Quickview>
+			<version>1.0.0</version>
+		</Abdus_Quickview>
+	</modules>
+    <frontend>
+        <layout>
+            <updates>
+                <abdus_quickview module="Abdus_Quickview">
+                    <file>quickview/abdus_quickview.xml</file>
+                </abdus_quickview>
+            </updates>
+        </layout>
+    </frontend>
+	<global>
+        <events>
+            <controller_action_layout_load_before>
+                <observers>
+                    <Abdus_Quickview_Model_Observer>
+                        <type>singletone</type>
+                        <class>Abdus_Quickview_Model_Observer</class>
+                        <method>ProductQuickView</method>
+                    </Abdus_Quickview_Model_Observer>
+                </observers>
+            </controller_action_layout_load_before>
+        </events>
+    </global>
+</config>

@@ -1,0 +1,8 @@
+<config>
+	<modules>
+		<Abdus_Quickview>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Abdus_Quickview>
+	</modules>
+</config>
